@@ -37,7 +37,7 @@ const Card = ({titulo,matricula,boton,icon,porcentaje}) => {
                     <img class="inline-block h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 <div>
-                    <button className="w-7/12 rounded-lg mx-7 mt-6 mb-4 bg-primary200 text-primary800 font-Roboto font-bold text-base">{boton}</button>
+                    <div className="flex flex-wrap content-center justify-center w-7/12 rounded-lg mx-7 mt-6 mb-4 bg-primary200 text-primary800 font-Roboto font-bold text-base">{boton}</div>
                 </div>
             </div>
             <div className="w-11/12 m-4 bg-background h-5/6 my-auto rounded-full flex items-end justify-center">

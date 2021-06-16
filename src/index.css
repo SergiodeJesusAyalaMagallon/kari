@@ -9,15 +9,11 @@
 #isNotSelected {
     @apply bg-onPrimary  text-onBackground
 }
-#50{
-    @apply h-1/2
+
+#Primary500{
+    @apply bg-primary500
 }
-#75{
-    @apply h-3/4
-}
-#25{
-    @apply h-1/4
-}
-#83{
-    @apply h-5/6
+
+#Primary200{
+    @apply bg-primary200
 }
