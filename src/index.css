@@ -17,3 +17,9 @@
 #Primary200{
     @apply bg-primary200
 }
+#newNoti{
+    @apply bg-surface text-primary500
+} 
+#azul{
+    @apply text-primary200
+}

@@ -1,21 +1,6 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      display: 'flex',
-      '& > *': {
-        margin: theme.spacing(0.5),
-      },
-    },
-    small: {
-      width: theme.spacing(4),
-      height: theme.spacing(4),
-    },
-  }));
 
 const Card = ({titulo,matricula,boton,icon,porcentaje}) => {
-    const classes = useStyles();
     return (
         <div className="w-11/12 h-37 m-auto mb-6 rounded-2xl  bg-surface grid grid-cols-12">
             <div className="w-11/12 bg-primary700 col-span-4 rounded-tl-2xl rounded-br-2xl rounded-bl-2xl">

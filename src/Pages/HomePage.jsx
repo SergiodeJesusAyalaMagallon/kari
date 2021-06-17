@@ -8,7 +8,7 @@ import BottomNavBar from '../components/HomePage/BottomNavBar'
 
 const HomePage = () => {
     return (
-    <div className="w-full h-full bg-background">
+    <div>
         <Header/>
         <div className="-mt-5 ml-8 grid grid-cols-12 w-12/12">
             <div className="col-span-9  w-11/12 h-10">
