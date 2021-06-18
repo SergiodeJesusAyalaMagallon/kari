@@ -12,7 +12,6 @@ import ContLesiones from '../components/DetServicio/Contenido/ContLesiones'
 import ContEdoPacient from '../components/DetServicio/Contenido/ContEdoPacient'
 import ContKilometraje from '../components/DetServicio/Contenido/ContKilometraje'
 import ContClasDiag from '../components/DetServicio/Contenido/ContClasDiag'
-import Card from '../components/HomePage/Card'
 import CardEspDatos from '../components/DetServicio/CardEspDatos'
 import ContenidoCronometria from '../components/DetServicio/Contenido/ContenidoCronometria'
 

@@ -23,3 +23,6 @@
 #azul{
     @apply text-primary200
 }
+#actual{
+    @apply text-primary300
+}
