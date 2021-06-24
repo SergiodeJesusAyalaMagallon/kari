@@ -1,5 +1,6 @@
+import { Edit } from '@material-ui/icons'
 import React from 'react'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
 
 const ContKilometraje = () =>{
     return(
@@ -15,7 +16,7 @@ const ContKilometraje = () =>{
             </div>
                
          </div>
-         <ButtonEdit/>
+         <ButtonIT Icono={Edit} Texto="Editar"/>
         </div>
         
     )

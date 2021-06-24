@@ -8,6 +8,8 @@ module.exports = {
     theme: {
       extend: {
         colors: {
+          primary: '#3A36A8',
+          secondary: '#F8972E',
           onBackground: '#8D8D8D',
           onPrimary: '#FFFFFF',
           background: '#E9E8F5',
@@ -29,7 +31,7 @@ module.exports = {
           primary400: '#4F4CB1',
           primary300: '#7B79C5',
           primary200: '#AFAEE0',
-          primay100: '#D3D2EB',
+          primary100: '#D3D2EB',
           'light-blue': colors.lightBlue,
           cyan: colors.cyan,
         },

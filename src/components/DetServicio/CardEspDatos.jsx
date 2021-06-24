@@ -1,5 +1,6 @@
+import { Edit } from '@material-ui/icons'
 import React from 'react'
-import ButtonEdit from './ButtonEdit'
+import ButtonIT from '../Compartidos/ButtonIT'
 const CardEspDatos = () => {
     return (
         <div className="grid bg-surface w-10/12 m-auto rounded-2xl">
@@ -9,7 +10,7 @@ const CardEspDatos = () => {
             <div className="bg-background w-11/12 m-auto rounded-xl my-7 px-2 py-4 font-Roboto font-medium text-base text-primary400">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
             </div>
-            <ButtonEdit/>
+            <ButtonIT Icono={Edit} Texto="Editar"/>
             
         </div>
     )

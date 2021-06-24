@@ -1,18 +1,24 @@
 import React from 'react'
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import { House,Agenda,Noti,configuracion } from '../../Assets/Icons';
+import {HomeRounded,HistoryRounded,NotificationsRounded,SettingsRounded} from '@material-ui/icons'
+import { Paper, Tab, Tabs } from '@material-ui/core';
 
 const BottomNavBar = () => {
     return (
-        <div className="absolute bottom-0 w-full">
-            <BottomNavigation value={"Home"}>
-                <BottomNavigationAction value="Home" icon={House} />
-                <BottomNavigationAction value="Agenda" icon={Agenda} />
-                <BottomNavigationAction value="Notificaciones" icon={Noti} />
-                <BottomNavigationAction value="Configuracion" icon={configuracion} />
-            </BottomNavigation>
-        </div>
+    <div className="absolute bottom-0 w-full">
+        <Paper square>
+            <Tabs
+                variant="fullWidth"
+                indicatorColor='primary'
+            >
+                <Tab icon={<HomeRounded/>} aria-label="phone" />
+                <Tab icon={<HistoryRounded/>} aria-label="favorite" />
+                <Tab icon={<NotificationsRounded/>} aria-label="person" />
+                <Tab icon={<SettingsRounded/>} aria-label="person" />
+            </Tabs>
+        </Paper>
+
+        
+    </div>
     )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Element from './Element'
-import { CheckCircleRounded } from '@material-ui/icons'
+import { CheckCircleRounded, Edit } from '@material-ui/icons'
 import  Avatar  from '@material-ui/core/Avatar'
 import ElementJefe from './ElementJefe'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
 
 const CardElements = () => {
     return (
@@ -42,7 +42,7 @@ const CardElements = () => {
                 />
             </div>
             <div className="mt-8">
-                <ButtonEdit/>
+                <ButtonIT Icono={Edit} Texto="Editar"/>
             </div>
             
         </div>

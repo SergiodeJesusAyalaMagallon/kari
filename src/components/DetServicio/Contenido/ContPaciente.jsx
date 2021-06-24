@@ -1,6 +1,7 @@
 import React from 'react'
 import GeneralButton from '../GeneralButton'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
+import { Edit } from '@material-ui/icons'
 
 const ContPaciente = () => {
     return (
@@ -48,7 +49,7 @@ const ContPaciente = () => {
                     Contenido="Sin capturar"
                 />
             </div>
-            <ButtonEdit/>
+            <ButtonIT Icono={Edit} Texto="Editar"/>
         </div>
     )
 }

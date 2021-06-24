@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from '../Button'
 import GeneralButton from '../GeneralButton'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
+import { Edit } from '@material-ui/icons'
 
 const ContClasDiag = () =>{
     return(
@@ -15,7 +16,7 @@ const ContClasDiag = () =>{
             <Button
                Titulo="Agregar CIE-10"
             />
-            <ButtonEdit/>
+            <ButtonIT Icono={Edit} Texto="Editar"/>
         </div>
     )
 }

@@ -1,5 +1,6 @@
+import { Edit } from '@material-ui/icons'
 import React from 'react'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
 import Button from '../Button'
 const ContenidoCronometria = () => {
     return (
@@ -41,7 +42,7 @@ const ContenidoCronometria = () => {
                 </div>
             </div>
             <div className="mt-5">
-                <ButtonEdit/>
+                <ButtonIT Icono={Edit} Texto="Editar"/>
             </div>
             <Button
                Titulo="Marcar llegada a hospital"

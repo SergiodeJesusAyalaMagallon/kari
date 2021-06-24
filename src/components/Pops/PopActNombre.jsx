@@ -4,15 +4,13 @@ import FooterBasic from './FooterBasic'
 import HeaderBasic from './HeaderBasic'
 import ContActNombre from './ContActNombre';
 
-const PopActNombre = () => {
+const PopActNombre = ({onClick}) => {
     return (
-        <div>
-            <PopGeneral 
+        <PopGeneral 
             Header={<HeaderBasic Titulo="Actualiza tu nombre"/>}
             Content={ContActNombre}
-            Footer={<FooterBasic Boton1="Cancelar" Boton2="Guardar"/>}
-          />
-        </div>
+            Footer={<FooterBasic Boton1="Cancelar" Boton2="Guardar" onClick={onClick}/>}
+        />
     )
 }
 

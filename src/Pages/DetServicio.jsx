@@ -43,7 +43,6 @@ const DetServicio = () => {
                     />
                 </div> 
             </div>
-            
             <div className="my-10">
                 <CardDatos 
                     Titulo="Datos del paciente"

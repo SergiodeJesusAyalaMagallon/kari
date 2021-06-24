@@ -1,7 +1,8 @@
 import React from 'react'
 import CardTurno from './CardTurno'
-import ButtonAgregar from './ButtonAgregar'
 import Line from './Line'
+import {  PersonAddRounded } from '@material-ui/icons'
+import ButtonIT from '../Compartidos/ButtonIT'
 
 
 const ContTurno = () => {
@@ -43,7 +44,9 @@ const ContTurno = () => {
                 Avatar="R"
             />
             <Line/>
-            <ButtonAgregar/>
+            <div className="mt-7">
+                <ButtonIT Icono={PersonAddRounded} Texto="Agregar Miembros"/>
+            </div>
 
         </div>     
 

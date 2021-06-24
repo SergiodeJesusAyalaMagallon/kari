@@ -3,7 +3,7 @@ import  Flecha from '@material-ui/icons/ArrowForwardIosRounded'
 
 const CardNoti = ({titulo,Icono,texto,id}) => {
     return (
-        <div className="w-10/12 m-auto rounded-lg  bg-onPrimary grid grid-cols-12 mb-7 text-secondary400" id={id}>
+        <div className="w-11/12 m-auto rounded-lg  bg-onPrimary grid grid-cols-12 mb-7 text-secondary400" id={id}>
                 <div className="col-span-2  flex items-center justify-center" >
                     <Icono style={{fontSize:'250%',marginLeft:'20%'}}/>
                 </div>

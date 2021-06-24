@@ -1,7 +1,5 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
-import Button from '../DetServicio/Button'
-import ButtonBorder from './ButtonBorder'
 
 const ContElimFoto = () => {
     return (

@@ -23,6 +23,10 @@
 #azul{
     @apply text-primary200
 }
-#actual{
-    @apply text-primary300
+#Surface{
+    @apply bg-surface
 }
+#Background{
+    @apply bg-background
+}
+

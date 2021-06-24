@@ -4,6 +4,8 @@ import CarITF from '../components/Configuracion/CarITF'
 import ContApli from '../components/Configuracion/ContApli'
 import ContCuenta from '../components/Configuracion/ContCuenta'
 import ButtonV2 from '../components/DetServicio/Button'
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 const Configuracion = () => {
     return (
         <div>
@@ -13,7 +15,14 @@ const Configuracion = () => {
                 </div>
             </div>
             <div className="mt-10"> 
-                <BaseCard Context={CarITF}/>
+                <Link
+                    component = {RouterLink}
+                    to = "/workgroup"
+                    color = "inherit"
+                    aria-label = "workgroup"
+                >   
+                    <BaseCard Context={CarITF}/>
+                </Link>
             </div>
             <div className="text-sm text-onBackground font-Roboto font-medium w-10/12 m-auto mt-10">APLICACIÓN</div>
             <div className="mt-1"> 

@@ -1,7 +1,8 @@
 import React from 'react'
 import GeneralButton from '../GeneralButton'
 import CardAlteraciones from './CardAlteraciones'
-import ButtonEdit from '../ButtonEdit'
+import ButtonIT from '../../Compartidos/ButtonIT'
+import { Edit } from '@material-ui/icons'
 
 const ContLesiones = () => {
     return (
@@ -33,7 +34,7 @@ const ContLesiones = () => {
                 />
             </div>
             <CardAlteraciones/>
-            <ButtonEdit/>
+            <ButtonIT Icono={Edit} Texto="Editar"/>
         </div>
     )
 }
