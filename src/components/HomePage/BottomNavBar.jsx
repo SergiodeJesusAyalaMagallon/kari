@@ -1,23 +1,42 @@
 import React from 'react'
 import {HomeRounded,HistoryRounded,NotificationsRounded,SettingsRounded} from '@material-ui/icons'
-import { Paper, Tab, Tabs } from '@material-ui/core';
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 
-const BottomNavBar = () => {
+const BottomNavBar = ({variante1,variante2,variante3,variante4,Not}) => {
     return (
     <div className="absolute bottom-0 w-full">
-        <Paper square>
-            <Tabs
-                variant="fullWidth"
-                indicatorColor='primary'
-            >
-                <Tab icon={<HomeRounded/>} aria-label="phone" />
-                <Tab icon={<HistoryRounded/>} aria-label="favorite" />
-                <Tab icon={<NotificationsRounded/>} aria-label="person" />
-                <Tab icon={<SettingsRounded/>} aria-label="person" />
-            </Tabs>
-        </Paper>
-
-        
+        <div className=" bg-onPrimary">
+            <div className="grid grid-cols-4 w-10/12 m-auto">
+                <Link
+                    component = {RouterLink}
+                    to = "/"
+                >   
+                    <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante1}><HomeRounded style={{fontSize:"170%"}}/></div>
+                </Link>
+                <Link
+                    component = {RouterLink}
+                    to = "/"
+                >   
+                    <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante2}><HistoryRounded style={{fontSize:"170%"}}/></div>
+                </Link>
+                <Link
+                    component = {RouterLink}
+                    to = "/Noti"
+                    aria-label = "menu"
+                >   
+                    <span class="absolute px-2 py-1 text-xs font-bold text-primary500 bg-onPrimary rounded-full mt-1 right-32 shadow-inner" id={Not}>3</span>
+                    <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante3}><NotificationsRounded style={{fontSize:"170%"}}/></div>
+                </Link>
+                <Link
+                    component = {RouterLink}
+                    to = "/Config"
+                >  
+                    <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante4}><SettingsRounded style={{fontSize:"170%"}}/></div>
+                </Link>
+                
+            </div>
+        </div>
     </div>
     )
 }

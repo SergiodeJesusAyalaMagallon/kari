@@ -45,4 +45,7 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+    corePlugins: {
+     zIndex: true,
+    }
   }

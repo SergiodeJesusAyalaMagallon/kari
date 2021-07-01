@@ -6,11 +6,13 @@ import ContActNombre from './ContActNombre';
 
 const PopActNombre = ({onClick}) => {
     return (
-        <PopGeneral 
+        <div className="mt-32">
+            <PopGeneral 
             Header={<HeaderBasic Titulo="Actualiza tu nombre"/>}
-            Content={ContActNombre}
+            Content={<ContActNombre/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Guardar" onClick={onClick}/>}
-        />
+            />
+        </div>
     )
 }
 

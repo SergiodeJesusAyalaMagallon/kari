@@ -2,37 +2,42 @@ import React from 'react'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Switch from '@material-ui/core/Switch'
 import { withStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import SelectHour from './SelectHour'
+import SelectMin from './SelectMin'
 
 const IOSSwitch = withStyles((theme) => ({
    root: {
-     width: 42,
-     height: 26,
+     width: 120,
+     height: 60,
      padding: 0,
-     margin: theme.spacing(1),
+     margin: theme.spacing(2),
    },
-   switchBase: {
+   switchBase: {   //cambio de switch color transicion
      padding: 1,
      '&$checked': {
-       transform: 'translateX(16px)',
-       color: `#E9E8F5`,
+       transform: 'translateX(60px)',
+       color: `#7B79C5`,
        '& + $track': {
-         backgroundColor: '#7B79C5',
+         backgroundColor: '#D1CFE5',
          opacity: 1,
          border: 'none',
        },
      },
      '&$focusVisible $thumb': {
-       color: '#7B79C5',
+       color: '#D1CFE5',
        border: '6px solid #D1CFE5',
      },
    },
    thumb: {
-     width: 24,
-     height: 24,
+     width: 60,
+     height: 60,
+     borderRadius: 20 / 2,
+     color: '#7B79C5',
    },
    track: {
-     borderRadius: 26 / 2,
-     border: `1px solid ${theme.palette.grey[400]}`,
+     borderRadius: 20 / 2,
+     border: `1px solid #D1CFE5`,
      backgroundColor: `#D1CFE5`,
      opacity: 1,
      transition: theme.transitions.create(['background-color', 'border']),
@@ -57,21 +62,68 @@ const IOSSwitch = withStyles((theme) => ({
  });
 
 const ContHourEntrada = () =>{
+  const [open, setOpen] = React.useState(false);
+
+    const handleOpenHourS = () => {
+        setOpen(true);
+    };
+    
+    const handleCloseHourS = () => {
+        setOpen(false);
+    };
+    const body = (
+        <SelectHour Header={"Hora de entrada (Turno 1)"} onClick={handleCloseHourS}/>
+    );
+
+    const [open2, setOpen2] = React.useState(false);
+
+    const handleOpenMinS = () => {
+        setOpen2(true);
+    };
+    
+    const handleCloseMinS = () => {
+        setOpen2(false);
+    };
+    const body2 = (
+        <SelectMin Header={"Minuto de entrada (Turno 1)"} onClick={handleCloseMinS}/>
+    );
+
    return (
        <div className="w-10/12 m-auto">
-           <div className="grid grid-cols-12">
+           <div className="grid grid-cols-12 font-Sans font-extrabold text-7xl text-primary700 tracking-widest m-auto">
 
-             <div className=" col-span-5 bg-background rounded-xl font-Sans font-bold text-lg text-primary600 py-2 px-4 flex flex-wrap justify-center items-center"><button type="button" >08</button></div>
-             <div className=" col-span-1 ont-Sans font-bold text-lg text-primary600">:</div>
-             <div className="col-span-5  bg-background rounded-xl font-Sans font-bold text-lg text-primary600 py-2 px-4 flex flex-wrap justify-center items-center"><button type="button" >00</button></div>
+             <div className=" col-span-5 bg-background rounded-xl py-8 px-4 flex flex-wrap justify-center items-center"><button type="button" onClick={handleOpenHourS} > 08 </button></div>
+             <div className=" col-span-2 font-Sans font-extrabold text-5xl text-primary600 flex flex-wrap justify-center items-center">:</div>
+             <div className="col-span-5  bg-background rounded-xl  py-8 px-4 flex flex-wrap justify-center items-center"><button type="button" onClick={handleOpenMinS}> 00 </button></div>
 
            </div>
-           <div>
-            <FormControlLabel
-                control={<IOSSwitch name="checkedB" />}
-                label=""
+           <Modal  ///seleccionar hora
+                open={open}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+            {body}
+            </Modal>
+
+            <Modal  ///seleccionar minito
+                open={open2}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+            {body2}
+            </Modal>
+
+
+           <div className=" flex flex-wrap  justify-center items-cente w-6/12 m-auto">
+              <FormControlLabel
+                control={<IOSSwitch name="checkedB" />} 
                 />
-           </div>   
+           </div> 
+           <div  className="absolute justify-center items-center grid grid-cols-2 -mt-16 ml-16">
+                   <div className="ml-3 mt-1  font-Sans font-extrabold text-2xl text-onPrimary ">AM</div>
+                   <div className="ml-4 mt-1 font-Sans font-extrabold text-2xl text-onPrimary ">PM</div>
+
+                </div>  
        </div>
    )
 }

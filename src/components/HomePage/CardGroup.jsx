@@ -5,13 +5,14 @@ import { Ambulance, Calendar, Map } from '../../Assets/Icons';
 
 const CardGroup = () => {
     return (
-        <div>
+        <div className="pb-20">
             <Card
                 icon={Ambulance}
                 matricula="1854MIC"
                 titulo="Servicio de emergencia"
                 boton="Abrir"
                 porcentaje={75}
+                progreso={"p75"}
             />
             <Card
                 icon={Calendar}
@@ -19,6 +20,7 @@ const CardGroup = () => {
                 titulo="Cobertura de evento"
                 boton="Abrir"
                 porcentaje={50}
+                progreso={"p50"}
             />
             <Card
                 icon={Map}
@@ -26,6 +28,7 @@ const CardGroup = () => {
                 titulo="Traslado foraneo"
                 boton="Abrir"
                 porcentaje={83}
+                progreso={"p80"}
             />
             <Card
                 icon={Ambulance}
@@ -33,6 +36,7 @@ const CardGroup = () => {
                 titulo="Servicio de emergencia"
                 boton="Abrir"
                 porcentaje={75}
+                progreso={"p75"}
             />
             <Card
                 icon={Calendar}
@@ -40,6 +44,7 @@ const CardGroup = () => {
                 titulo="Cobertura de evento"
                 boton="Abrir"
                 porcentaje={50}
+                progreso={"p50"}
             />
             <Card
                 icon={Map}
@@ -47,6 +52,7 @@ const CardGroup = () => {
                 titulo="Traslado foraneo"
                 boton="Abrir"
                 porcentaje={83}
+                progreso={"p80"}
             />
         </div>
     )

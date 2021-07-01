@@ -9,7 +9,7 @@ const PopAgrTurno = ({onClick}) => {
         <div>
             <PopGeneral
             Header={<HeaderBasic Titulo="Agregar un nuevo turno (Turno 4)"/>}
-            Content={ContDetTurnoEsp}
+            Content={<ContDetTurnoEsp/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Crear" onClick={onClick}/>}
             Id="Background"
           />

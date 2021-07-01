@@ -10,6 +10,17 @@ import Configuration from './Pages/Configuracion'
 import DetServicio from './Pages/DetServicio'
 import GrupoTrabajo from './Pages/GrupoTrabajo'
 import GestionTTrabajo from './Pages/GestionTTrabajo'
+import Diagnostico from './Pages/Diagnostico';
+import Kilometraje from './Pages/Kilometraje';
+import Crono from './Pages/Crono';
+import EdoPaciente from './Pages/EdoPaciente';
+import Informes from './Pages/Informes';
+import ElemServ from './Pages/ElemServ';
+import Hour from '../src/components/Pops/Hour'
+import AddPetitioner from './Pages/AddPetitioner';
+import ConfService from './Pages/ConfService';
+import ReadyService from './Pages/ReadyService';
+import { FolderSharedRounded, LocalHospitalRounded, SentimentVeryDissatisfiedRounded } from '@material-ui/icons';
 
 function App() {
   return (
@@ -31,14 +42,47 @@ function App() {
         <Route path='/DetServicio'>
             <DetServicio/>
         </Route>
-        <Route path='/DetServicio'>
-            <DetServicio/>
-        </Route>
         <Route path='/workgroup'>
             <GrupoTrabajo/>
         </Route>
         <Route path='/GTT'>
             <GestionTTrabajo/>
+        </Route>
+        <Route path='/Diagnostico'>
+            <Diagnostico/>
+        </Route>
+        <Route path='/Km'>
+            <Kilometraje/>
+        </Route>
+        <Route path='/Crono'>
+            <Crono/>
+        </Route>
+        <Route path='/EdoPaciente'>
+            <EdoPaciente titulo="Estado del paciente" ico={<LocalHospitalRounded style={{fontSize:"500%"}}/>}/>
+        </Route>
+        <Route path='/DatoPaciente'>
+            <EdoPaciente titulo="Datos del paciente" ico={<FolderSharedRounded style={{fontSize:"500%"}}/>}/>
+        </Route>
+        <Route path='/Lesiones'>
+            <EdoPaciente titulo="Lesiones / enfermedades" ico={<SentimentVeryDissatisfiedRounded style={{fontSize:"500%"}}/>}/>
+        </Route>
+        <Route path='/Informes'>
+            <Informes/>
+        </Route>
+        <Route path='/ElemServ'>
+            <ElemServ/>
+        </Route>
+        <Route path='/PH'>
+            <Hour/>
+        </Route>
+        <Route path='/AddPetitioner'>
+            <AddPetitioner/>
+        </Route>
+        <Route path='/ConfService'>
+            <ConfService/>
+        </Route>
+        <Route path='/ReadyService'>
+            <ReadyService/>
         </Route>
       </Switch>
     </Router>

@@ -3,6 +3,9 @@ import GeneralButton from '../GeneralButton'
 import ButtonIT from '../../Compartidos/ButtonIT'
 import { Edit } from '@material-ui/icons'
 
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
+
 const ContPaciente = () => {
     return (
         <div>
@@ -49,7 +52,14 @@ const ContPaciente = () => {
                     Contenido="Sin capturar"
                 />
             </div>
-            <ButtonIT Icono={Edit} Texto="Editar"/>
+            <Link
+                    component = {RouterLink}
+                    to = "/EdoPaciente"
+                >   
+                
+                <ButtonIT Icono={Edit} Texto="Editar"/>
+                    
+                </Link>
         </div>
     )
 }

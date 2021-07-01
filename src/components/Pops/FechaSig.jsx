@@ -14,7 +14,7 @@ const FechaSig = ({onClick}) => {
                     </div>
                     <div className="col-span-8 flex flex-wrap items-center font-Sans font-extrabold text-7xl text-primary400 ml-1">2021</div>
             </div>}
-            Content={Calendario}
+            Content={<Calendario/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Aceptar" onClick={onClick} />}
           />
         </div>

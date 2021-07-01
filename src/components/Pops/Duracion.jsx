@@ -6,10 +6,10 @@ import PopGeneral from './PopGeneral'
 
 const Duracion = ({onClick,titulo}) => {
     return (
-        <div>
+        <div className="mt-40">
             <PopGeneral
             Header={<HeaderBasic Titulo={titulo}/>}
-            Content={ContDuracion}
+            Content={<ContDuracion/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Aceptar" onClick={onClick} />}
           />
         </div>

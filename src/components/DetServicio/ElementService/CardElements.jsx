@@ -4,10 +4,12 @@ import { CheckCircleRounded, Edit } from '@material-ui/icons'
 import  Avatar  from '@material-ui/core/Avatar'
 import ElementJefe from './ElementJefe'
 import ButtonIT from '../../Compartidos/ButtonIT'
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 
 const CardElements = () => {
     return (
-        <div className="grid bg-surface w-10/12 m-auto rounded-2xl">
+        <div className="grid bg-surface w-10/12 m-auto rounded-2xl mt-32">
             <div className="bg-primary700 text-primary200 grid grid-cols-12 rounded-t-2xl">
                 <div className="text-xl font-Sans font-extrabold my-4 ml-6 col-span-10">Elementos de servicio</div>
                 <div className="mt-4 justify-self-end"><CheckCircleRounded style={{fontSize:"170%"}}/></div>
@@ -42,7 +44,12 @@ const CardElements = () => {
                 />
             </div>
             <div className="mt-8">
-                <ButtonIT Icono={Edit} Texto="Editar"/>
+            <Link
+                    component = {RouterLink}
+                    to = "/ElemServ"
+                >   
+                <ButtonIT Icono={Edit} Texto="Editar"/>  
+                </Link>
             </div>
             
         </div>

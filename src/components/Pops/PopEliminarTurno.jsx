@@ -9,7 +9,7 @@ const PopEliminarTurno = ({onClick}) => {
         <div>
             <PopGeneral 
             Header={<HeaderBasic Titulo="¿Deseas eliminar el turno 1?"/>}
-            Content={ContElimTurno}
+            Content={<ContElimTurno/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Eliminar" onClick={onClick}/>}
             Id="Background"
           />

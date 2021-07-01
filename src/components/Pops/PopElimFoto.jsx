@@ -7,11 +7,12 @@ import ContElimFoto from './ContElimFoto';
 
 const PopElimFoto = ({onClick}) => {
     return (
-        <div>
+        <div className="mt-36">
             <PopGeneral 
             Header={<HeaderBasic Titulo="¿Deseas borrar tu foto de perfil?"/>}
-            Content={ContElimFoto}
+            Content={<ContElimFoto/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Eliminar" onClick={onClick}/>}
+            Ancho="An9-12"
           />
         </div>
     )

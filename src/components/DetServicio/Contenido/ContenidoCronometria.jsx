@@ -2,7 +2,25 @@ import { Edit } from '@material-ui/icons'
 import React from 'react'
 import ButtonIT from '../../Compartidos/ButtonIT'
 import Button from '../Button'
+
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
+import { Modal } from '@material-ui/core'
+import Hour from '../../Pops/Hour'
+
 const ContenidoCronometria = () => {
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const body = (
+        <Hour onClick={handleClose}/>
+    );
     return (
         <div>
             <div className="mt-10">
@@ -42,11 +60,24 @@ const ContenidoCronometria = () => {
                 </div>
             </div>
             <div className="mt-5">
-                <ButtonIT Icono={Edit} Texto="Editar"/>
+            <Link
+                    component = {RouterLink}
+                    to = "/Crono"
+                >  
+                <ButtonIT Icono={Edit} Texto="Editar"/> 
+            </Link>
             </div>
+            <button type="button" onClick={handleOpen} className="w-full">
             <Button
                Titulo="Marcar llegada a hospital"
             />
+            </button>
+            <Modal
+                open={open}
+            >
+            {body}
+            </Modal>
+            
         </div>
     )
 }

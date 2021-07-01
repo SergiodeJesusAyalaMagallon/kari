@@ -8,7 +8,7 @@ const PopActFotPer = ({onClick}) => {
     return (
         <PopGeneral 
             Header={<HeaderBasic Titulo="Actualizar foto de perfil"/>}
-            Content={ContActFot}
+            Content={<ContActFot/>}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Guardar" onClick={onClick}/>}
           />
     )

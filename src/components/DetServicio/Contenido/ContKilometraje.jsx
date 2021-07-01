@@ -1,6 +1,8 @@
 import { Edit } from '@material-ui/icons'
 import React from 'react'
 import ButtonIT from '../../Compartidos/ButtonIT'
+import {Link as RouterLink} from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 
 const ContKilometraje = () =>{
     return(
@@ -16,7 +18,12 @@ const ContKilometraje = () =>{
             </div>
                
          </div>
-         <ButtonIT Icono={Edit} Texto="Editar"/>
+         <Link
+                    component = {RouterLink}
+                    to = "/Km"
+                >  
+                <ButtonIT Icono={Edit} Texto="Editar"/> 
+            </Link>
         </div>
         
     )

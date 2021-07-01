@@ -3,10 +3,11 @@ import CardNoti from '../components/Notifications/CardNoti'
 import  Warning from '@material-ui/icons/WarningRounded'
 import  New from '@material-ui/icons/NewReleasesRounded'
 import { Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core'
+import BottomNavBar from '../components/HomePage/BottomNavBar'
 
 const Notifications = () => {
     return (
-        <div className="bg-background h-screen">
+        <div className="bg-background h-screen overflow-y-scroll">
             <div className="pt-20 w-5/6 m-auto text-2xl text-primary600 font-Roboto font-bold text-center">
                 Tienes 3 nuevas notificaciones
             </div>
@@ -30,7 +31,7 @@ const Notifications = () => {
                 
             </div>
             <div className="mt-10 w-full mx-auto text-base text-primary300 font-Roboto font-medium text-center bg-background">
-            <div>
+            <div className="pb-10">
                 <Accordion>
                     <AccordionSummary
                         aria-controls="panel1a-content"
@@ -72,6 +73,7 @@ const Notifications = () => {
                 </Accordion>
             </div>
             </div>
+            <BottomNavBar variante3="NavSelected" Not="Invisible"/>
         </div>
     )
 }

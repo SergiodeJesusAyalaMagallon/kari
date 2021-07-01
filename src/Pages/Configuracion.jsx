@@ -6,9 +6,11 @@ import ContCuenta from '../components/Configuracion/ContCuenta'
 import ButtonV2 from '../components/DetServicio/Button'
 import {Link as RouterLink} from 'react-router-dom'
 import Link from '@material-ui/core/Link'
+import BottomNavBar from '../components/HomePage/BottomNavBar'
 const Configuracion = () => {
     return (
         <div>
+            <div className="h-screen overflow-scroll">
             <div className="rounded-bl-3xl bg-primary700 font-Roboto font-medium text-2xl text-onPrimary h-24 flex flex-wrap items-center justify-center">
                 <div className="pt-8">
                     Configuración
@@ -35,6 +37,8 @@ const Configuracion = () => {
             <div className="mt-10 pb-16">
                 <ButtonV2 Titulo="Cerrar la sesión"/>
             </div>
+            </div>
+            <BottomNavBar variante4="NavSelected"/>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import {Link as RouterLink} from 'react-router-dom'
 import Link from '@material-ui/core/Link'
 
-const Card = ({titulo,matricula,boton,icon,porcentaje}) => {
+const Card = ({titulo,matricula,boton,icon,porcentaje,progreso}) => {
     return (
         <div className="w-11/12 h-37 m-auto mb-6 rounded-2xl  bg-surface grid grid-cols-12">
             <div className="w-11/12 bg-primary700 col-span-4 rounded-tl-2xl rounded-br-2xl rounded-bl-2xl">
@@ -35,8 +35,8 @@ const Card = ({titulo,matricula,boton,icon,porcentaje}) => {
                 </div>
             </div>
             <div className="w-11/12 m-4 bg-background h-5/6 my-auto rounded-full flex items-end justify-center">
-                <div className="bg-primary200 w-10/12 h-3/4 rounded-full m-0.5 text-onPrimary font-Sans font-extrabold text-sm">
-                    <div className=" my-12 transform -rotate-90 tracking-widest">
+                <div className="bg-primary200 w-10/12 rounded-full m-0.5 text-onPrimary font-Sans font-extrabold text-sm" id={progreso}>
+                    <div className="py-8 transform -rotate-90 tracking-widest text-right">
                         {porcentaje}%
                     </div>
                 </div>
