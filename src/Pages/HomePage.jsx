@@ -58,7 +58,7 @@ const HomePage = () => {
             <CardGroup/>
         </div>
         <BottomNavBar variante1="NavSelected"/>
-        <div className="absolute bottom-14 w-full flex justify-end pr-3">
+        <div className="absolute bottom-14 w-full flex justify-end pr-3 lg:invisible">
         <button type="button" onClick={handleOpen} className="w-6/12"><div className=" grid grid-cols-12 rounded-full bg-secondary500 text-onPrimary py-2"><div className="col-span-4 flex justify-center"><AddCircleRounded/></div><div className="col-span-8 font-Roboto font-bold text-left ">Nuevo servicio</div></div></button>
             <Modal
                 open={open}

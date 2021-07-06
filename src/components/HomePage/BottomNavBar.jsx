@@ -5,7 +5,7 @@ import Link from '@material-ui/core/Link'
 
 const BottomNavBar = ({variante1,variante2,variante3,variante4,Not}) => {
     return (
-    <div className="absolute bottom-0 w-full">
+    <div className="absolute bottom-0 w-full lg:invisible">
         <div className=" bg-onPrimary">
             <div className="grid grid-cols-4 w-10/12 m-auto">
                 <Link
@@ -16,7 +16,7 @@ const BottomNavBar = ({variante1,variante2,variante3,variante4,Not}) => {
                 </Link>
                 <Link
                     component = {RouterLink}
-                    to = "/"
+                    to = "/Historia"
                 >   
                     <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante2}><HistoryRounded style={{fontSize:"170%"}}/></div>
                 </Link>

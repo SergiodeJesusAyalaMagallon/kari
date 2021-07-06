@@ -16,15 +16,17 @@ import Crono from './Pages/Crono';
 import EdoPaciente from './Pages/EdoPaciente';
 import Informes from './Pages/Informes';
 import ElemServ from './Pages/ElemServ';
-import Hour from '../src/components/Pops/Hour'
 import AddPetitioner from './Pages/AddPetitioner';
 import ConfService from './Pages/ConfService';
 import ReadyService from './Pages/ReadyService';
 import { FolderSharedRounded, LocalHospitalRounded, SentimentVeryDissatisfiedRounded } from '@material-ui/icons';
+import ClasDiagnostica from './Pages/ClasDiagnostica';
+import History from './Pages/History';
+import Filtrar from './Pages/Filtrar';
 
 function App() {
   return (
-    <div className="bg-background h-screen">
+    <div className="bg-background h-full">
       <Router>
       <Switch>
         <Route exact path= '/'>
@@ -72,9 +74,6 @@ function App() {
         <Route path='/ElemServ'>
             <ElemServ/>
         </Route>
-        <Route path='/PH'>
-            <Hour/>
-        </Route>
         <Route path='/AddPetitioner'>
             <AddPetitioner/>
         </Route>
@@ -83,6 +82,15 @@ function App() {
         </Route>
         <Route path='/ReadyService'>
             <ReadyService/>
+        </Route>
+        <Route path='/ClasDiagnostica'>
+            <ClasDiagnostica/>
+        </Route>
+        <Route path='/Historia'>
+            <History/>
+        </Route>
+        <Route path='/Filtrar'>
+            <Filtrar/>
         </Route>
       </Switch>
     </Router>

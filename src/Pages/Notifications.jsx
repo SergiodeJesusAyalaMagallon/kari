@@ -8,10 +8,10 @@ import BottomNavBar from '../components/HomePage/BottomNavBar'
 const Notifications = () => {
     return (
         <div className="bg-background h-screen overflow-y-scroll">
-            <div className="pt-20 w-5/6 m-auto text-2xl text-primary600 font-Roboto font-bold text-center">
+            <div className="pt-20 w-5/6 m-auto text-2xl lg:text-4xl text-primary600 font-Roboto font-bold text-center">
                 Tienes 3 nuevas notificaciones
             </div>
-            <div className="mt-9 w-11/12 m-auto">
+            <div className="mt-9 w-11/12 lg:w-5/12 m-auto">
                 <CardNoti
                     titulo="Un Reporte sin cerrar está por vencer"
                     texto="Recuerda terminar el registro de Traslado foráneo antes de las 02:34 de la tarde"
@@ -31,7 +31,7 @@ const Notifications = () => {
                 
             </div>
             <div className="mt-10 w-full mx-auto text-base text-primary300 font-Roboto font-medium text-center bg-background">
-            <div className="pb-10">
+            <div className="pb-10 flex justify-center">
                 <Accordion>
                     <AccordionSummary
                         aria-controls="panel1a-content"

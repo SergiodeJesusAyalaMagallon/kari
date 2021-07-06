@@ -19,7 +19,7 @@ const ContenidoCronometria = () => {
         setOpen(false);
     };
     const body = (
-        <Hour onClick={handleClose}/>
+        <Hour onClick={handleClose} titulo="Hora de llegada al hospital"/>
     );
     return (
         <div>

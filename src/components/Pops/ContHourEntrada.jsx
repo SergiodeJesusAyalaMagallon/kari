@@ -61,7 +61,7 @@ const IOSSwitch = withStyles((theme) => ({
    );
  });
 
-const ContHourEntrada = () =>{
+const ContHourEntrada = ({titulo}) =>{
   const [open, setOpen] = React.useState(false);
 
     const handleOpenHourS = () => {
@@ -72,7 +72,7 @@ const ContHourEntrada = () =>{
         setOpen(false);
     };
     const body = (
-        <SelectHour Header={"Hora de entrada (Turno 1)"} onClick={handleCloseHourS}/>
+        <SelectHour Header="Hora" onClick={handleCloseHourS}/>
     );
 
     const [open2, setOpen2] = React.useState(false);
@@ -85,7 +85,7 @@ const ContHourEntrada = () =>{
         setOpen2(false);
     };
     const body2 = (
-        <SelectMin Header={"Minuto de entrada (Turno 1)"} onClick={handleCloseMinS}/>
+        <SelectMin Header="Minuto" onClick={handleCloseMinS}/>
     );
 
    return (

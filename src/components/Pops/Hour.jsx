@@ -4,11 +4,11 @@ import FooterBasic from './FooterBasic'
 import HeaderBasic from './HeaderBasic'
 import PopHour from './PopHour'
 
-const Hour = ({onClick}) => {
+const Hour = ({onClick,titulo}) => {
     return (
         <div className="mt-32">
             <PopHour
-            Header={<HeaderBasic Titulo="Hora de entrada (Turno 1)"/>}
+            Header={<HeaderBasic Titulo={titulo}/>}
             Content={ContHourEntrada}
             Footer={<FooterBasic Boton1="Cancelar" Boton2="Aceptar" onClick={onClick} />}
             

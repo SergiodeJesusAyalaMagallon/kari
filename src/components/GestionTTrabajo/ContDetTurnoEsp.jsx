@@ -31,7 +31,7 @@ const ContDetTurnoEsp = () => {
         setOpen3(false);
     };
     const body3 = (
-        <Hour onClick={handleClose3}/>
+        <Hour onClick={handleClose3} titulo="Hora de entrada (Turno 1)"/>
     );
     
     const [open4, setOpen4] = React.useState(false);
