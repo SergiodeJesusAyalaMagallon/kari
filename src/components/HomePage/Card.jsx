@@ -4,7 +4,7 @@ import Link from '@material-ui/core/Link'
 
 const Card = ({titulo,matricula,boton,icon,porcentaje,progreso}) => {
     return (
-        <div className="w-11/12 h-37 m-auto mb-6 rounded-2xl  bg-surface grid grid-cols-12">
+        <div className="w-11/12 lg:w-5/12 h-37 m-auto mb-6 rounded-2xl  bg-surface grid grid-cols-12">
             <div className="w-11/12 bg-primary700 col-span-4 rounded-tl-2xl rounded-br-2xl rounded-bl-2xl">
                 <div className="w-11/12 text-surface mx-5 mt-6 flex justify-end mb-2" >
                     {icon}

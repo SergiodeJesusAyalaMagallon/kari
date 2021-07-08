@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#MSelected {
+    @apply bg-primary300 text-primary100
+}
+
 #isSelected {
     @apply bg-primary700  text-onPrimary
 }

@@ -65,7 +65,7 @@ const History = () => {
                 </div>
             </div>
             <div className="-mt-24 ml-8 grid grid-cols-12 w-12/12">
-            <div className="col-span-9  w-11/12 h-10">
+            <div className="col-span-9  w-11/12 h-10 lg:w-7/12">
                 <Link
                     component = {RouterLink}
                     to = "/Search"
@@ -75,7 +75,7 @@ const History = () => {
                     <Busqueda Color="Primary200"/>
                 </Link>
             </div>
-            <div className="col-span-3 w-9/12 h-10 mr-2">
+            <div className="col-span-3 w-9/12 lg:w-5/12 lg:ml-20 h-10 mr-2">
             <Link
                     component = {RouterLink}
                     to = "/Filtrar"
@@ -94,7 +94,7 @@ const History = () => {
                 </Link>
             </div>
         </div>
-        <div className="bg-onPrimary rounded-2xl w-10/12 m-auto mt-8">
+        <div className="bg-onPrimary rounded-2xl w-10/12 lg:w-5/12 m-auto mt-8">
                     <FormControl className={classes.formControl}>
                         <Select
                             labelId="demo-controlled-open-select-label"
@@ -183,7 +183,7 @@ const History = () => {
         </div>
             </div>
             <BottomNavBar variante2="NavSelected"/>
-            <div className="absolute bottom-10 w-2/12 flex justify-end right-3">
+            <div className="absolute bottom-10 lg:bottom-3 w-2/12 flex justify-end right-3">
             <button type="button" onClick={handleOpen}><div className=" grid grid-cols-12 rounded-full text-secondary500 py-2"><AddCircleRounded style={{fontSize:"400%"}}/></div></button>
             <Modal
                 open={open}

@@ -22,7 +22,7 @@ const ActionMiembros = ({onClick}) => {
 
     return (
         <div>
-            <div className="bg-background w-8/12 m-auto rounded-3xl py-8 mt-96">
+            <div className="bg-background w-8/12 lg:w-3/12  m-auto rounded-3xl py-8 mt-96">
             <button type="button" onClick={handleOpen} className="w-full">
             <div className="bg-primary300 w-10/12 m-auto rounded-full mb-6 text-onPrimary flex justify-center">
                     <div className="font-Roboto font-medium text-base py-3"><AddCircleRounded/> Nuevo miembro </div>
@@ -47,7 +47,7 @@ const ActionMiembros = ({onClick}) => {
                 
                 
             </div>
-            <div className="text-secondary500 mt-6 m-auto w-2/12 transform rotate-45" onClick={onClick}>
+            <div className="text-secondary500 mt-6 m-auto w-2/12 lg:w-1/12 lg:pl-10 transform rotate-45" onClick={onClick}>
                 <AddCircleRounded style={{fontSize:"450%"}}/>
             </div>
         </div>

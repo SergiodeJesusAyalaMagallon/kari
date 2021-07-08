@@ -22,7 +22,7 @@ const SearchPage = () => {
                 <div className="flex justify-center text-primary600 font-Roboto font-bold text-2xl lg:text-5xl">Bien, Juan</div>
                 <div className="flex justify-center text-onBackground font-Sans font-normal text-sm lg:text-xl">¿Qué es lo que estamos buscando?</div>
             </div>
-            <div className="mt-12 w-10/12 lg:w-5/12 m-auto pb-96">
+            <div className="mt-12 w-10/12 lg:ml-72 m-auto pb-96">
                 <Busqueda Color="Primary500"/>
             </div>
             <div className="mt-12 w-10/12 m-auto pb-36">

@@ -49,7 +49,7 @@ const EdoPaciente = ({Titulo,Figura}) => {
                 </div>
             </div>
 
-            <div className="w-10/12 m-auto">
+            <div className="w-10/12 lg:w-4/12 m-auto">
                 <div className="w-11/12 m-auto rounded-2xl mb-2">
                     <div className="bg-primary300 w-10/12 rounded-t-2xl pl-4  py-1 font-Sans font-bold text-base text-onPrimary">Asistencia</div>
                     <div className="bg-onPrimary rounded-b-2xl rounded-tr-2xl">

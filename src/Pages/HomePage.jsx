@@ -9,6 +9,7 @@ import BottomNavBar from '../components/HomePage/BottomNavBar'
 import { AddCircleRounded } from '@material-ui/icons'
 import AddServices from '../components/Pops/AddServices'
 import { Modal } from '@material-ui/core'
+import LateralNAv from '../components/HomePage/LateralNAv'
 
 
 const HomePage = () => {
@@ -28,8 +29,9 @@ const HomePage = () => {
     return (
     <div>
         <Header/>
-        <div className="-mt-5 ml-8 grid grid-cols-12 w-12/12">
-            <div className="col-span-9  w-11/12 h-10">
+        <LateralNAv variante1="MSelected" Not="3"/>
+        <div className="-mt-5 lg:-mt-14 ml-8 lg:ml-32 grid grid-cols-12 w-12/12">
+            <div className="col-span-9 w-11/12 h-10 lg:w-6/12">
                 <Link
                     component = {RouterLink}
                     to = "/Search"
@@ -39,7 +41,7 @@ const HomePage = () => {
                     <Busqueda Color="Primary200"/>
                 </Link>
             </div>
-            <div className="col-span-3 w-9/12 h-10 mr-2">
+            <div className="col-span-3 w-9/12 lg:w-4/12 h-10 mr-2">
             <Link
                     component = {RouterLink}
                     to = "/Noti"
@@ -47,7 +49,7 @@ const HomePage = () => {
                     aria-label = "menu"
                 >   
                 <div className="text-secondary">
-                <span class="absolute px-2 py-1 text-xs font-bold text-secondary700 bg-onPrimary rounded-full -mt-3 right-6">3</span>
+                <span className="absolute px-2 py-1 text-xs font-bold text-secondary700 bg-onPrimary rounded-full -mt-3 right-6 lg:right-60">3</span>
                 <NotificationButton/>
                 </div>
                     
@@ -57,9 +59,10 @@ const HomePage = () => {
         <div className="overflow-y-scroll mt-6" style={{height:"560px"}}>
             <CardGroup/>
         </div>
+        
         <BottomNavBar variante1="NavSelected"/>
-        <div className="absolute bottom-14 w-full flex justify-end pr-3 lg:invisible">
-        <button type="button" onClick={handleOpen} className="w-6/12"><div className=" grid grid-cols-12 rounded-full bg-secondary500 text-onPrimary py-2"><div className="col-span-4 flex justify-center"><AddCircleRounded/></div><div className="col-span-8 font-Roboto font-bold text-left ">Nuevo servicio</div></div></button>
+        <div className="absolute bottom-14 w-6/12 sm:w-5/12 lg:w-2/12 right-4 lg:left-4 lg:top-60">
+        <button type="button" onClick={handleOpen} className="w-full"><div className=" grid grid-cols-12 rounded-full bg-secondary500 text-onPrimary py-2"><div className="col-span-4 flex justify-center"><AddCircleRounded/></div><div className="col-span-8 font-Roboto font-bold text-left ">Nuevo servicio</div></div></button>
             <Modal
                 open={open}
             >

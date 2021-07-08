@@ -3,7 +3,7 @@ import React from 'react'
 const CardFecha = () => {
     return (
         <div>
-            <div className="w-10/12 h-37 m-auto rounded-3xl bg-surface grid grid-cols-12">
+            <div className="w-10/12 lg:w-5/12 h-37 m-auto rounded-3xl bg-surface grid grid-cols-12">
             <div className="w-11/12 bg-primary700 col-span-4 rounded-tl-3xl  rounded-bl-3xl font-Sans font-extrabold">
                 <div className="w-11/12 text-surface  flex justify-center text-4xl tracking-tighter mt-12" >
                     12

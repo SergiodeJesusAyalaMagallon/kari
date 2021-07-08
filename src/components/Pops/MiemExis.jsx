@@ -31,7 +31,7 @@ const MiemExis = ({onClick}) => {
         <AddMiemExi onClick={handleClose2}/>
     );
     return (
-        <div className="w-10/12 md:w-10/12 lg:w-7/12 m-auto mt-48 rounded-2xl bg-onPrimary" id="Background">
+        <div className="w-10/12 md:w-10/12 lg:w-3/12 m-auto mt-48 rounded-2xl bg-onPrimary" id="Background">
             <div className="py-6 bg-primary700 rounded-2xl rounded-br-none font-Roboto font-bold text-xl text-primary200 flex flex-wrap justify-center items-center">
                 <div className="w-8/12 m-auto text-center">Agregar paramédicos para el turno 1</div>
             </div>

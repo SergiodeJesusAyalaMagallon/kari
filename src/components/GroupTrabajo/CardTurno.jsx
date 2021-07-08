@@ -10,8 +10,8 @@ const CardTurno = ({AvatarL,Titulo,Texto}) => {
                     <Avatar>{AvatarL}</Avatar>
                 </div>
                 <div className="col-span-9 mx-5">
-                    <div className="text-primary500 font-Roboto font-medium text-lg">{Titulo}</div>
-                    <div className="text-onBackground font-Roboto text-lg">{Texto}</div>
+                    <div className="text-primary500 font-Roboto font-medium text-lg text-left">{Titulo}</div>
+                    <div className="text-onBackground font-Roboto text-lg text-left">{Texto}</div>
                 </div>
                 <div className="col-span-1 flex flex-wrap  items-center text-primary200">
                     <ArrowForwardIosRounded style={{fontSize:"100%"}}/>

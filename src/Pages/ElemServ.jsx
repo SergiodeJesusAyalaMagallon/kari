@@ -71,15 +71,15 @@ const ElemServ = () => {
             <div className="text-primary500 font-Roboto font-bold text-3xl w-10/12 m-auto text-center mt-6">Elementos del Servicio de emergencia</div>
             <div className="text-primary300 font-Sans w-7/12 m-auto text-center mt-2">Cuerpo de Protección Civil Sahuayo Michoacán</div>
             
-            <div className="grid grid-cols-12 mt-10">
-                <div className="col-span-10 bg-onPrimary rounded-r-xl mr-4 py-2 grid grid-cols-12">
+            <div className="grid grid-cols-12 mt-10 lg:w-5/12 lg:m-auto lg:mt-10">
+                <div className="col-span-10 bg-onPrimary rounded-r-xl lg:rounded-xl mr-4 py-2 grid grid-cols-12">
                     <div className="grid grid-cols-1 pl-6 col-span-9">
                         <div className="text-primary200 font-extrabold">Chofer:</div>
                         <div className="text-primary400 font-Roboto font-medium">Andrea Gómez Rossainz</div>
                     </div>
                     <div className="col-span-3 flex flex-wrap justify-center items-center"><Avatar>A</Avatar></div>
                 </div>
-                <button type="button" onClick={handleOpen2} className="w-full col-span-2"><div className="bg-secondary300 rounded-l-xl col-span-2 flex flex-wrap justify-center items-center text-onPrimary py-3"><EditRounded/></div></button>
+                <button type="button" onClick={handleOpen2} className="w-full col-span-2"><div className="bg-secondary300 rounded-l-xl lg:rounded-xl col-span-2 flex flex-wrap justify-center items-center text-onPrimary py-3"><EditRounded/></div></button>
                 <Modal
                     open={open2}
                 >
@@ -87,15 +87,15 @@ const ElemServ = () => {
                 </Modal>
             </div>
 
-            <div className="grid grid-cols-12 mt-10">
-                <div className="col-span-10 bg-onPrimary rounded-r-xl mr-4 py-2 grid grid-cols-12">
+            <div className="grid grid-cols-12 mt-10 lg:w-5/12 lg:m-auto lg:mt-10">
+                <div className="col-span-10 bg-onPrimary rounded-r-xl lg:rounded-xl mr-4 py-2 grid grid-cols-12">
                     <div className="grid grid-cols-1 pl-6 col-span-9">
                         <div className="text-primary200 font-extrabold">Jefe de servicio</div>
                         <div className="text-primary400 font-Roboto font-medium">Juan Javier Rubio</div>
                     </div>
                     <div className="col-span-3 flex flex-wrap justify-center items-center"><Avatar>J</Avatar></div>
                 </div>
-                <button type="button" onClick={handleOpen3} className="w-full col-span-2"><div className="bg-secondary300 rounded-l-xl col-span-2 flex flex-wrap justify-center items-center text-onPrimary py-3"><EditRounded/></div></button>
+                <button type="button" onClick={handleOpen3} className="w-full col-span-2"><div className="bg-secondary300 rounded-l-xl lg:rounded-xl col-span-2 flex flex-wrap justify-center items-center text-onPrimary py-3"><EditRounded/></div></button>
                 <Modal
                     open={open3}
                 >
@@ -103,7 +103,7 @@ const ElemServ = () => {
                 </Modal>
                 
             </div>
-            <div className="w-7/12 m-auto text-onPrimary mt-10">
+            <div className="w-7/12 lg:w-5/12 m-auto text-onPrimary mt-10">
             <button type="button" onClick={handleOpen4} className="w-full"><ButtonITRounded Icono={AddCircleRounded} Texto="Agregar parmédicos"/></button>
             <Modal
                 open={open4}
@@ -113,14 +113,14 @@ const ElemServ = () => {
             </div>
 
             <div className="pb-40">
-            <div className="grid grid-cols-12 mt-10">
-                <div className="col-span-10 bg-primary300 rounded-r-xl mr-4 py-2 grid grid-cols-12">
+            <div className="grid grid-cols-12 mt-10 lg:w-5/12 lg:m-auto lg:mt-10">
+                <div className="col-span-10 bg-primary300 rounded-r-xl lg:rounded-xl mr-4 py-2 grid grid-cols-12">
                     <div className="grid grid-cols-1 pl-6 col-span-9 py-2">
                         <div className="text-onPrimary font-Roboto font-medium">Karen Herminia Pizarro</div>
                     </div>
                     <div className="col-span-3 flex flex-wrap justify-center items-center -mt-14"><Avatar>K</Avatar></div>
                 </div>
-                <button type="button" onClick={handleOpen} className="w-full col-span-2 my-2"><div className="bg-secondary300 rounded-l-xl flex flex-wrap justify-center items-center text-onPrimary py-3"><DeleteRounded/></div></button>
+                <button type="button" onClick={handleOpen} className="w-full col-span-2 my-2"><div className="bg-secondary300 rounded-l-xl lg:rounded-xl flex flex-wrap justify-center items-center text-onPrimary py-3"><DeleteRounded/></div></button>
                 <Modal
                     open={open}
                 >
@@ -130,14 +130,14 @@ const ElemServ = () => {
                 
             </div>
 
-            <div className="grid grid-cols-12 mt-10 ">
-                <div className="col-span-10 bg-primary300 rounded-r-xl mr-4 py-2 grid grid-cols-12">
+            <div className="grid grid-cols-12 mt-10 lg:w-5/12 lg:m-auto lg:mt-10">
+                <div className="col-span-10 bg-primary300 rounded-r-xl lg:rounded-xl mr-4 py-2 grid grid-cols-12">
                     <div className="grid grid-cols-1 pl-6 col-span-9 py-2">
                         <div className="text-onPrimary font-Roboto font-medium">Alvaro Prieto Rodriguez</div>
                     </div>
                     <div className="col-span-3 flex flex-wrap justify-center items-center -mt-14"><Avatar>A</Avatar></div>
                 </div>
-                <button type="button" onClick={handleOpen} className="w-full col-span-2 my-2"><div className="bg-secondary300 rounded-l-xl flex flex-wrap justify-center items-center text-onPrimary py-3"><DeleteRounded/></div></button>
+                <button type="button" onClick={handleOpen} className="w-full col-span-2 my-2"><div className="bg-secondary300 rounded-l-xl lg:rounded-xl flex flex-wrap justify-center items-center text-onPrimary py-3"><DeleteRounded/></div></button>
                 <Modal
                     open={open}
                 >
@@ -154,13 +154,13 @@ const ElemServ = () => {
                     component = {RouterLink}
                     to = "/DetServicio"
                 >   
-                    <div className="bg-primary600 w-7/12 m-auto rounded-xl text-onPrimary py-1.5">Guardar elementos</div>
+                    <div className="bg-primary600 w-7/12 lg:w-4/12 m-auto rounded-xl text-onPrimary py-1.5">Guardar elementos</div>
                 </Link>
                 <Link
                     component = {RouterLink}
                     to = "/"
                 >   
-                    <div className="border-2 border-primary600 w-7/12 m-auto rounded-xl text-primary600 mt-3 py-1.5">Cancelar</div>
+                    <div className="border-2 border-primary600 w-7/12 lg:w-4/12 m-auto rounded-xl text-primary600 mt-3 py-1.5">Cancelar</div>
                 </Link>
             </div>
         </div>

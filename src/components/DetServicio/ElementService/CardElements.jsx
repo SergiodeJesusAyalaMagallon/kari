@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link'
 
 const CardElements = () => {
     return (
-        <div className="grid bg-surface w-10/12 m-auto rounded-2xl mt-32">
+        <div className="grid bg-surface w-10/12 lg:w-5/12 m-auto rounded-2xl mt-32">
             <div className="bg-primary700 text-primary200 grid grid-cols-12 rounded-t-2xl">
                 <div className="text-xl font-Sans font-extrabold my-4 ml-6 col-span-10">Elementos de servicio</div>
                 <div className="mt-4 justify-self-end"><CheckCircleRounded style={{fontSize:"170%"}}/></div>

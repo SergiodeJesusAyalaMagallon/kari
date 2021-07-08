@@ -96,7 +96,7 @@ const Filtrar = () => {
                 </div>
             </div>
             
-            <div className="w-10/12 m-auto mt-10 mb-10">
+            <div className="w-10/12 lg:w-5/12 m-auto mt-10 mb-10">
             <button type="button" onClick={handleOpen3} className="w-full">
             <div className="text-primary500 font-Roboto font-bold text-xl text-left">Fecha:</div>
                 <div className="bg-onPrimary py-2 rounded-lg mt-2 text-primary300 font-semibold grid grid-cols-12">
@@ -113,7 +113,7 @@ const Filtrar = () => {
             </div>
 
             
-            <div className="w-10/12 m-auto mb-10">
+            <div className="w-10/12 lg:w-5/12 m-auto mb-10">
                 <div className="text-primary500 font-Roboto font-bold text-xl">Personal paramédico</div>
                 <div className="bg-onPrimary py-2 rounded-lg mt-2 text-primary300 font-semibold">
                 <FormControl className={classes.formControl}>
@@ -134,7 +134,7 @@ const Filtrar = () => {
                 </div>
             </div>
 
-            <div className="w-10/12 m-auto mb-10">
+            <div className="w-10/12 lg:w-5/12 m-auto mb-10">
                 <div className="text-primary500 font-Roboto font-bold text-xl">Tipo de servicio</div>
                 <div className=" py-2 rounded-lg mt-2 text-primary300 font-semibold">
                 <FormControl component="fieldset" className="w-full">
@@ -178,7 +178,7 @@ const Filtrar = () => {
                         </FormControl>
                 </div>
             </div>
-            <div className="w-10/12 m-auto mb-10">
+            <div className="w-10/12 lg:w-5/12 m-auto mb-10">
                 <div className="text-primary500 font-Roboto font-bold text-xl">Solicitante</div>
                 <div className=" py-2 rounded-lg mt-2 text-primary300 font-semibold">
                 <FormControl component="fieldset" className="w-full">
@@ -217,7 +217,7 @@ const Filtrar = () => {
                         </FormControl>
                 </div>
             </div>
-            <div className="w-10/12 m-auto mb-10">
+            <div className="w-10/12 lg:w-5/12 m-auto mb-10">
                 <div className="text-primary500 font-Roboto font-bold text-xl">Derivación</div>
                 <div className=" py-2 rounded-lg mt-2 text-primary300 font-semibold">
                 <FormControl component="fieldset" className="w-full">
@@ -251,7 +251,7 @@ const Filtrar = () => {
                         </FormControl>
                 </div>
             </div>
-            <div className="w-10/12 m-auto mb-52">
+            <div className="w-10/12 lg:w-5/12 m-auto mb-52">
                 <div className="text-primary500 font-Roboto font-bold text-xl">Servicio realizado</div>
                 <div className="bg-onPrimary py-2 rounded-lg mt-2 text-primary300 font-semibold">
                 <FormControl className={classes.formControl}>
@@ -277,7 +277,7 @@ const Filtrar = () => {
                     component = {RouterLink}
                     to = "/Historia"
                 >  
-                <div className="bg-onPrimary mt-4 w-10/12 m-auto rounded-xl mb-2 ml-6 text-primary500 flex justify-center border-2 border-primary500">
+                <div className="bg-onPrimary mt-4 w-10/12 lg:w-5/12 m-auto rounded-xl mb-2 ml-6 lg:ml-96 text-primary500 flex justify-center border-2 border-primary500">
                     <div className="font-Roboto font-medium text-base py-2">Cancelar</div>
                 </div>
             </Link>
@@ -285,7 +285,7 @@ const Filtrar = () => {
                     component = {RouterLink}
                     to = "/Historia"
                 >  
-                <div className="bg-primary700 mt-4 w-10/12 m-auto rounded-xl mr-6 mb-2 flex justify-center ">
+                <div className="bg-primary700 mt-4 w-10/12 lg:w-5/12 m-auto rounded-xl mr-6 lg:mr-96 mb-2 flex justify-center ">
                     <div className="font-Roboto font-medium text-base py-2 text-onPrimary">Aplicar filtros</div>
                 </div>
             </Link>

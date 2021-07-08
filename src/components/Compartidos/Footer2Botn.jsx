@@ -10,13 +10,13 @@ const Footer2Botn = ({Ruta,Ruta2}) => {
                     component = {RouterLink}
                     to = {Ruta}
                 >   
-                    <div className="bg-primary600 w-7/12 m-auto rounded-xl text-onPrimary py-2">Crear servicio</div>
+                    <div className="bg-primary600 w-7/12 lg:w-3/12 m-auto rounded-xl text-onPrimary py-2">Crear servicio</div>
                 </Link>
                 <Link
                     component = {RouterLink}
                     to = {Ruta2}
                 >   
-                    <div className="border-2 border-primary600 w-7/12 m-auto rounded-xl text-primary600 mt-5 py-2">Cancelar</div>
+                    <div className="border-2 border-primary600 w-7/12 lg:w-3/12 m-auto rounded-xl text-primary600 mt-5 py-2">Cancelar</div>
                 </Link>
             </div>
         </div>

@@ -33,7 +33,7 @@ const ClasDiagnostica = () => {
                     <div className="w-8/12 text-center m-auto mt-2 mb-5 text-base text-primary300 font-Sans font-normal">Cuerpo de Proteccion Civil Sahuayo Michoacan</div>
                 </div>
             </div>
-            <div className="overflow-scroll w-11/12" style={{height:"470px"}}>
+            <div className="overflow-scroll w-11/12 lg:w-5/12 m-auto" style={{height:"470px"}}>
             <FormControl component="fieldset" className="w-full m-auto">
                             <FormGroup className="mx-11 w-full">
                             <FormControlLabel
@@ -181,7 +181,7 @@ const ClasDiagnostica = () => {
                     component = {RouterLink}
                     to = "/DetServicio"
                 >  
-                <div className="bg-primary600 w-8/12 m-auto rounded-xl mb-2 mt-6 text-onPrimary flex justify-center">
+                <div className="bg-primary600 w-8/12 lg:w-3/12 m-auto rounded-xl mb-2 mt-6 text-onPrimary flex justify-center">
                     <div className="font-Roboto font-medium text-base py-2">Guardar datos</div>
                 </div>
             </Link>
@@ -189,7 +189,7 @@ const ClasDiagnostica = () => {
                     component = {RouterLink}
                     to = "/DetServicio"
                 >  
-                <div className="bg-background w-8/12 m-auto rounded-xl mb-4 flex justify-center border-2 border-primary500">
+                <div className="bg-background w-8/12 lg:w-3/12 m-auto rounded-xl mb-4 flex justify-center border-2 border-primary500">
                     <div className="font-Roboto font-medium text-base py-2 text-primary500">Cancelar</div>
                 </div>
             </Link>

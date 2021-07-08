@@ -25,7 +25,7 @@ const BottomNavBar = ({variante1,variante2,variante3,variante4,Not}) => {
                     to = "/Noti"
                     aria-label = "menu"
                 >   
-                    <span class="absolute px-2 py-1 text-xs font-bold text-primary500 bg-onPrimary rounded-full mt-1 right-32 shadow-inner" id={Not}>3</span>
+                    
                     <div className="col-span-1 text-primary100 pt-3  pb-1 flex justify-center" id={variante3}><NotificationsRounded style={{fontSize:"170%"}}/></div>
                 </Link>
                 <Link

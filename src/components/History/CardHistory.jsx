@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 const CardHistory = ({Icono,Dia,Mes,Año,Titulo,Subtitulo,HoraI,HoraF}) => {
     const classes = useStyles();
     return (
-        <div className="w-10/12 m-auto grid grid-cols-12 mb-7">
+        <div className="w-10/12 lg:w-5/12 m-auto grid grid-cols-12 mb-7">
             <div className="bg-primary700 col-span-3 grid grid-cols-1 rounded-l-2xl">
                 <div className="flex justify-center mt-6">{Icono}</div>
                 <div className="text-surface font-Sans font-extrabold text-4xl text-center mt-5">{Dia}</div>

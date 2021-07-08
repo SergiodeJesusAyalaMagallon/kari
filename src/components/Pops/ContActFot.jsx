@@ -25,7 +25,7 @@ const ContActFot = () => {
                 <Avatar style={{width:"65%",paddingTop:"30%",paddingBottom:"30%",fontSize:"500%"}}>j</Avatar>
             </div>
             <Button Titulo="Subir foto"/>
-            <button type="button" onClick={handleOpen} className="w-full">
+            <button type="button" onClick={handleOpen} className="w-full lg:w-8/12 lg:ml-16">
             <ButtonBorder Titulo="Borrar foto de perfil"/></button>
             <Modal
                 open={open}

@@ -34,14 +34,14 @@ const ContCuenta = () => {
     );
     return (
         <div>
-            <button type="button" onClick={handleOpen}><CarITFV2/></button>
+            <button type="button" onClick={handleOpen} className="w-full"><CarITFV2/></button>
             <Modal
                 open={open}
             >
             {body}
             </Modal>
             <Line/>
-            <button type="button" onClick={handleOpen2}>
+            <button type="button" onClick={handleOpen2} className="w-full">
             <CardITTF
                 Icono={AssignmentIndRounded}
                 Titulo="Nombre"

@@ -8,7 +8,7 @@ import Link from '@material-ui/core/Link'
 const AddServices = ({onClick}) => {
     return (
         <div className="mt-20">
-            <div className="bg-background w-10/12 m-auto rounded-2xl">
+            <div className="bg-background w-10/12 lg:w-4/12 m-auto rounded-2xl">
                 <div className="text-center text-primary500 font-Roboto font-bold text-2xl pt-4">Tipo de servicio</div>
                 <div className="grid grid-cols-2 mt-8">
                     <div className="grid grid-cols-1 bg-surface mr-2 rounded-r-2xl py-2">
@@ -51,7 +51,7 @@ const AddServices = ({onClick}) => {
                     </div>
                 </div>
             </div>
-            <div className="w-4/12 m-auto grid grid-cols-12 rounded-full bg-secondary500 text-onPrimary py-2 mt-10" onClick={onClick}>
+            <div className="w-4/12 lg:w-1/12 m-auto grid grid-cols-12 rounded-full bg-secondary500 text-onPrimary py-2 mt-10" onClick={onClick}>
                 <div className="col-span-4 flex justify-center"><CancelRounded/></div>
                 <div className="col-span-8 font-Roboto font-bold text-left ">Cancelar</div>
             </div>

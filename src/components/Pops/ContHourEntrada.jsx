@@ -120,7 +120,7 @@ const ContHourEntrada = ({titulo}) =>{
                 />
            </div> 
            <div  className="absolute justify-center items-center grid grid-cols-2 -mt-16 ml-16">
-                   <div className="ml-3 mt-1  font-Sans font-extrabold text-2xl text-onPrimary ">AM</div>
+                   <div className="ml-3 lg:ml-8 mt-1  font-Sans font-extrabold text-2xl text-onPrimary ">AM</div>
                    <div className="ml-4 mt-1 font-Sans font-extrabold text-2xl text-onPrimary ">PM</div>
 
                 </div>  

@@ -18,10 +18,10 @@ const Crono = () => {
                 <div className="grid grid-cols-12 w-full m-auto bg-background rounded-xl mb-14">
                     <div className="bg-secondary300 text-onPrimary rounded-r-xl col-span-2 mr-3 flex flex-wrap justify-center items-center -mt-2 -mb-2"><Edit style={{fontSize:"200%"}}/></div>
                     <div className="col-span-2 bg-primary700 -m-2 ml-2 -mr-6 rounded-lg px-2 py-1">
-                        <div className="font-Sans font-extrabold text-2xl text-primary200">01:02</div>
+                        <div className="font-Sans font-extrabold text-2xl text-primary200 text-center">01:02</div>
                         <div className="font-Sans font-extrabold text-xs text-primary300 text-center">PM</div>
                     </div>
-                    <div className="bg-onPrimary col-span-7  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Hora de la llamada</div>
+                    <div className="bg-onPrimary col-span-7 lg:w-8/12 pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Hora de la llamada</div>
                 </div>
             </div>
 
@@ -29,10 +29,10 @@ const Crono = () => {
                 <div className="grid grid-cols-12 w-full m-auto bg-background rounded-xl mb-14">
                     <div className="bg-secondary300 text-onPrimary rounded-r-xl col-span-2 mr-3 flex flex-wrap justify-center items-center -mt-2 -mb-2"><Edit style={{fontSize:"200%"}}/></div>
                     <div className="col-span-2 bg-primary700 -m-2 ml-2 -mr-6 rounded-lg px-2 py-1">
-                        <div className="font-Sans font-extrabold text-2xl text-primary200">01:08</div>
+                        <div className="font-Sans font-extrabold text-2xl text-primary200 text-center">01:08</div>
                         <div className="font-Sans font-extrabold text-xs text-primary300 text-center">PM</div>
                     </div>
-                    <div className="bg-onPrimary col-span-7  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Salida de base</div>
+                    <div className="bg-onPrimary col-span-7 lg:w-8/12  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Salida de base</div>
                 </div>
             </div>
 
@@ -40,10 +40,10 @@ const Crono = () => {
                 <div className="grid grid-cols-12 w-full m-auto bg-background rounded-xl mb-14">
                     <div className="bg-secondary300 text-onPrimary rounded-r-xl col-span-2 mr-3 flex flex-wrap justify-center items-center -mt-2 -mb-2"><Edit style={{fontSize:"200%"}}/></div>
                     <div className="col-span-2 bg-primary700 -m-2 ml-2 -mr-6 rounded-lg px-2 py-1">
-                        <div className="font-Sans font-extrabold text-2xl text-primary200">01:23</div>
+                        <div className="font-Sans font-extrabold text-2xl text-primary200 text-center">01:23</div>
                         <div className="font-Sans font-extrabold text-xs text-primary300 text-center">PM</div>
                     </div>
-                    <div className="bg-onPrimary col-span-7  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Llegada al lugar</div>
+                    <div className="bg-onPrimary col-span-7 lg:w-8/12 pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Llegada al lugar</div>
                 </div>
             </div>
 
@@ -51,10 +51,10 @@ const Crono = () => {
                 <div className="grid grid-cols-12 w-full m-auto bg-background rounded-xl mb-14">
                     <div className="bg-secondary300 text-onPrimary rounded-r-xl col-span-2 mr-3 flex flex-wrap justify-center items-center -mt-2 -mb-2"><Edit style={{fontSize:"200%"}}/></div>
                     <div className="col-span-2 bg-primary700 -m-2 ml-2 -mr-6 rounded-lg px-2 py-1">
-                        <div className="font-Sans font-extrabold text-2xl text-primary200">01:58</div>
+                        <div className="font-Sans font-extrabold text-2xl text-primary200 text-center">01:58</div>
                         <div className="font-Sans font-extrabold text-xs text-primary300 text-center">PM</div>
                     </div>
-                    <div className="bg-onPrimary col-span-7  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Inicio de traslado</div>
+                    <div className="bg-onPrimary col-span-7 lg:w-8/12 pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Inicio de traslado</div>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ const Crono = () => {
                         <div className="font-Sans font-extrabold text-2xl text-primary200"></div>
                         <div className="font-Sans font-extrabold text-xs text-primary300 text-center"></div>
                     </div>
-                    <div className="bg-onPrimary col-span-7  pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Llegada al hospital</div>
+                    <div className="bg-onPrimary col-span-7 lg:w-8/12 pt-2 ml-6 pl-4 rounded-r-xl  font-Sans font-bold text-primary300 text-lg">Llegada al hospital</div>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@ const Crono = () => {
                     component = {RouterLink}
                     to = "/DetServicio"
                 >  
-                <div className="bg-primary600 w-8/12 m-auto rounded-xl mb-4 text-onPrimary flex justify-center">
+                <div className="bg-primary600 w-8/12 lg:w-3/12 m-auto rounded-xl mb-4 text-onPrimary flex justify-center">
                     <div className="font-Roboto font-medium text-base py-3">Guardar datos</div>
                 </div>
             </Link>
@@ -82,7 +82,7 @@ const Crono = () => {
                     component = {RouterLink}
                     to = "/DetServicio"
                 >  
-                <div className="bg-background w-8/12 m-auto rounded-xl mb-8 flex justify-center border-2 border-primary500">
+                <div className="bg-background w-8/12 lg:w-3/12 m-auto rounded-xl mb-8 flex justify-center border-2 border-primary500">
                     <div className="font-Roboto font-medium text-base py-3 text-primary500">Cancelar</div>
                 </div>
             </Link>

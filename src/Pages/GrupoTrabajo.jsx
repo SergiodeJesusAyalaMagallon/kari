@@ -49,7 +49,7 @@ const GrupoTrabajo = () =>{
                     <CardSinTurno/>
                 </div>
                </div>
-                <div className="text-secondary500 absolute bottom-5 right-4">
+                <div className="text-secondary500 absolute bottom-5 right-4 lg:right-12 lg:bottom-8">
                 <button type="button" onClick={handleOpen} className="w-6/12">
                     <AddCircleRounded style={{fontSize:"450%"}}/>
                 </button>
