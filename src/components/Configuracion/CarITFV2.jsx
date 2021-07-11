@@ -6,7 +6,11 @@ const CarITFV2 = () => {
     return (
         <div className="grid grid-cols-12 bg-onPrimary rounded-full text-primary500">
             <div className="col-span-2 py-2 flex flex-wrap justify-center items-center">
-                <Avatar>J</Avatar>
+            {
+                localStorage.getItem('picture') 
+                ? <Avatar src={localStorage.getItem('picture')}/>
+                : <Avatar>{window.localStorage.getItem('user').charAt(0)} </Avatar>
+            }
             </div>
             <div className="col-span-9 ml-5 flex flex-wrap  items-center font-Roboto font-extrabold text-left">Actualizar foto de perfil</div>
             <div className="col-span-1 flex flex-wrap  items-center mx-4 text-primary200">

@@ -36,7 +36,7 @@ const Notifications = () => {
                     <AccordionSummary
                         aria-controls="panel1a-content"
                         id="panel1a-header"
-                        style={{backgroundColor:"#E9E8F5",boxShadow:"none"}}
+                        style={{backgroundColor:"#E9E8F5",boxShadow:"none",borderStyle:"none"}}
                         >
                             <div className="text-primary300 font-Roboto font-medium m-auto">Mostrar notificaciones anteriores</div>
                     </AccordionSummary>
@@ -73,7 +73,7 @@ const Notifications = () => {
                 </Accordion>
             </div>
             </div>
-            <BottomNavBar variante3="NavSelected" Not="Invisible"/>
+            <BottomNavBar variante3="NavSelected" Not="Invisible" ID="MT3"/>
         </div>
     )
 }

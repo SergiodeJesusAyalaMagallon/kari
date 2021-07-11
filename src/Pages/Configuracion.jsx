@@ -38,7 +38,7 @@ const Configuracion = () => {
                 <ButtonV2 Titulo="Cerrar la sesión"/>
             </div>
             </div>
-            <BottomNavBar variante4="NavSelected"/>
+            <BottomNavBar variante4="NavSelected" ID="MT4"/>
         </div>
     )
 }

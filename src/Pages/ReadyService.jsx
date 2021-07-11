@@ -19,7 +19,7 @@ const ReadyService = () => {
                 </Link>
                 <Link
                     component = {RouterLink}
-                    to = "/"
+                    to = "/home"
                 >   
                     <div className="border-2 border-primary600 w-7/12 m-auto rounded-xl text-primary600 mt-5 py-2">Ir a los detalles</div>
                 </Link>

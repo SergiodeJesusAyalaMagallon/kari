@@ -158,7 +158,7 @@ const ElemServ = () => {
                 </Link>
                 <Link
                     component = {RouterLink}
-                    to = "/"
+                    to = "/home"
                 >   
                     <div className="border-2 border-primary600 w-7/12 lg:w-4/12 m-auto rounded-xl text-primary600 mt-3 py-1.5">Cancelar</div>
                 </Link>

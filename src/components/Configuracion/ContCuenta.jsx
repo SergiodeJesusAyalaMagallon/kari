@@ -45,7 +45,7 @@ const ContCuenta = () => {
             <CardITTF
                 Icono={AssignmentIndRounded}
                 Titulo="Nombre"
-                Texto="Juan Javier Rubio"
+                Texto={window.localStorage.getItem('user')}
             />
             </button>
             <Modal

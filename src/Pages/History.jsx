@@ -54,8 +54,10 @@ const History = () => {
     };
 
     return (
-        <div>
+        <div className="bg-background">
+            
             <div className="h-screen overflow-scroll">
+                <BottomNavBar variante2="NavSelected" ID="MT2"/>
             <div className="static w-full h-64 bg-primary900 flex justify-center">
                 <div className="w-11/12 my-12">
                     <div className="mx-2">
@@ -182,7 +184,7 @@ const History = () => {
 
         </div>
             </div>
-            <BottomNavBar variante2="NavSelected"/>
+            
             <div className="absolute bottom-10 lg:bottom-3 w-2/12 flex justify-end right-3">
             <button type="button" onClick={handleOpen}><div className=" grid grid-cols-12 rounded-full text-secondary500 py-2"><AddCircleRounded style={{fontSize:"400%"}}/></div></button>
             <Modal

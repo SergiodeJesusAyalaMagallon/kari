@@ -1,32 +1,11 @@
-import { Avatar, Checkbox, FormControl, FormControlLabel, FormGroup } from '@material-ui/core'
+import { Avatar, FormControl, FormGroup } from '@material-ui/core'
 import React from 'react'
 import FooterBasic from './FooterBasic'
 import HeaderBasic from './HeaderBasic'
 import PopGeneral from './PopGeneral'
 
 
-const LabelPer = ({nombre,avatar}) =>{
-    return(
-        <div className="bg-background w-56 grid grid-cols-12 ">
-            <div className="col-span-11 text-primary600 font-Roboto font-medium flex flex-wrap items-center pl-4">{nombre}</div>
-            <div className="col-span-1"><Avatar>{avatar}</Avatar></div>
-        </div>
-    )
-}
-
 const SelectorMiembros = ({Header,btn2,onClick}) => {
-
-    const [state, setState] = React.useState({
-    gilad: true,
-    jason: false,
-    antoine: false,
-    });
-
-    const handleChange = (event) => {
-        setState({ ...state, [event.target.name]: event.target.checked });
-    };
-
-    const { Juan } = state;
 
     return (
         <div className="mt-20">
@@ -38,36 +17,45 @@ const SelectorMiembros = ({Header,btn2,onClick}) => {
                     <div>
                         <FormControl component="fieldset" className="w-full">
                             <FormGroup className="ml-7">
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
+                            
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option1" name="option1" type="checkbox" className="input"/>
+                                <label for="option1" className="label w-72 rounded-3xl text-center mb-4">Juan Javier Rubio</label>
+                            </div>
+                            </div>
+
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option2" name="option1" type="checkbox" className="input"/>
+                                <label for="option2" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option3" name="option1" type="checkbox" className="input"/>
+                                <label for="option3" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option4" name="option1" type="checkbox" className="input"/>
+                                <label for="option4" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option5" name="option1" type="checkbox" className="input"/>
+                                <label for="option5" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+
                             </FormGroup>
                         </FormControl>
                     </div>
@@ -75,21 +63,30 @@ const SelectorMiembros = ({Header,btn2,onClick}) => {
                 <div>
                         <FormControl component="fieldset" className="w-full">
                             <FormGroup className="ml-7">
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={Juan} onChange={handleChange} name="gilad"/>}
-                                label={<LabelPer nombre="Juan Javier Rubio" avatar="J"/>}
-                                className="bg-background w-10/12 m-auto px-2 rounded-xl mb-4"
-                            />
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option6" name="option1" type="checkbox" className="input"/>
+                                <label for="option6" className="label w-72 rounded-3xl text-center mb-4">Juan Javier Rubio</label>
+                            </div>
+                            </div>
+
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option7" name="option1" type="checkbox" className="input"/>
+                                <label for="option7" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+
+                            <div className="flex">
+                                <Avatar className="avatar">J</Avatar>
+                                <div className="inputGroup -ml-10">
+                                <input id="option8" name="option1" type="checkbox" className="input"/>
+                                <label for="option8" className="label w-72 rounded-3xl text-center mb-4">Lorem ipsum dolor sit</label>
+                            </div>
+                            </div>
+                           
                             </FormGroup>
                         </FormControl>
                     </div>

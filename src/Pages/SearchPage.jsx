@@ -11,7 +11,7 @@ const SearchPage = () => {
             <div className="text-primary500 h-14 pt-4 pl-4">
             <Link
                     component = {RouterLink}
-                    to = "/"
+                    to = "/home"
                     color = "inherit"
                     aria-label = "menu"
                 >   

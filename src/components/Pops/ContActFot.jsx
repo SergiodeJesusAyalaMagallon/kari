@@ -22,7 +22,11 @@ const ContActFot = () => {
     return (
         <div>
             <div className="flex flex-wrap justify-center items-center mb-6">
-                <Avatar style={{width:"65%",paddingTop:"30%",paddingBottom:"30%",fontSize:"500%"}}>j</Avatar>
+            {
+                    localStorage.getItem('picture') 
+                    ? <Avatar style={{width:"65%",height:"65%",}} src={localStorage.getItem('picture')}/>
+                    : <Avatar style={{width:"65%",height:"65%",}}>{window.localStorage.getItem('user').charAt(0)} </Avatar>
+                }
             </div>
             <Button Titulo="Subir foto"/>
             <button type="button" onClick={handleOpen} className="w-full lg:w-8/12 lg:ml-16">

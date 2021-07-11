@@ -10,7 +10,7 @@ const ConfService = () => {
             <div className="text-primary500 font-Roboto font-medium text-4xl w-8/12 m-auto text-center mt-6">Servicio de emergencia</div>
             <div className="text-onBackground font-Sans font-semibold text-lg text-center mt-4 mb-36">Solicitado por Población abierta</div>
 
-            <Footer2Botn Ruta="/ReadyService" Ruta2="/"/>
+            <Footer2Botn Ruta="/ReadyService" Ruta2="/home"/>
 
         </div>
     )

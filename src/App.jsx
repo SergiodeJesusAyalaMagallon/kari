@@ -23,8 +23,8 @@ import { FolderSharedRounded, LocalHospitalRounded, SentimentVeryDissatisfiedRou
 import ClasDiagnostica from './Pages/ClasDiagnostica';
 import History from './Pages/History';
 import Filtrar from './Pages/Filtrar';
-import Login2 from './Pages/Login2';
 import LoginPrin from './components/Login/LoginPrin';
+
 
 
 function App() {
@@ -32,7 +32,10 @@ function App() {
     <div className="bg-background h-full">
       <Router>
       <Switch>
-        <Route exact path= '/'>
+      <Route exact path= '/'>
+            <LoginPrin/>
+        </Route>
+        <Route path= '/Home'>
             <HomePage/>
         </Route>
         <Route path='/Search'>
@@ -94,12 +97,6 @@ function App() {
         </Route>
         <Route path='/Filtrar'>
             <Filtrar/>
-        </Route>
-        <Route path='/login'>
-            <Login2/>
-        </Route>
-        <Route path='/azul'>
-            <LoginPrin/>
         </Route>
       </Switch>
     </Router>

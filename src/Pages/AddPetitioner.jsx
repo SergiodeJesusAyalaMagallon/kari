@@ -14,7 +14,7 @@ const AddPetitioner = () => {
                 <div className="bg-primary300 w-10/12 lg:w-5/12 m-auto mb-8 rounded-xl py-4 text-onPrimary font-semibold text-lg text-center">Población abierta</div>
             </div>
             <div>
-                <Footer2Botn Ruta="/ConfService" Ruta2="/"/>
+                <Footer2Botn Ruta="/ConfService" Ruta2="/home"/>
             </div>
         </div>
     )
