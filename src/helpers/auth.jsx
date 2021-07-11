@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import axios from 'axios';
 import env from 'react-dotenv';
 
@@ -59,11 +58,9 @@ export const deleteToken = (token) => {
 export const deleteRefreshToken = (token) => {
   window.localStorage.removeItem('f_token');
 }
-=======
 
 import axios from 'axios';
 
 const googleSignIn = async ( idToken ) => {
 
 }
->>>>>>> ef9b214388faf8ff11ed4fb60993d5e99a8d1b35
