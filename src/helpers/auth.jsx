@@ -58,9 +58,3 @@ export const deleteToken = (token) => {
 export const deleteRefreshToken = (token) => {
   window.localStorage.removeItem('f_token');
 }
-
-import axios from 'axios';
-
-const googleSignIn = async ( idToken ) => {
-
-}
