@@ -21,7 +21,7 @@ const Header = ({Data}) => {
                 loadUser
                 ? <Skeleton variant="circle"/>
                 : (
-                    localStorage.getItem('picture') 
+                    user.picture
                     ? <Avatar src={user.picture}/>
                     : <Avatar>{user.name.charAt(0)} </Avatar>
                 )

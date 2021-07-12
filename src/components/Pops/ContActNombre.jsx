@@ -1,22 +1,28 @@
 import { Avatar } from '@material-ui/core'
 import PropTypes from 'prop-types';
 import React, { useRef } from 'react'
+import { UseUser } from '../../Context/UserContext'
+import { Skeleton } from '@material-ui/lab';
 
 const ContActNombre = ({ name, setName }) => {
     const refInput = useRef(null);
-
+    const {user, loadUser} = UseUser();
     const handleChange = () => {
         setName( refInput.current.value );
-        console.log(name);
+        //console.log(name);
     }
 
     return (
         <div>
             <div className="flex flex-wrap justify-center items-center mb-6">
             {
-                localStorage.getItem('picture') 
-                ? <Avatar style={{width:"50%",height:"50%",}} src={localStorage.getItem('picture')}/>
-                : <Avatar style={{width:"50%",height:"50%",}}>{window.localStorage.getItem('user').charAt(0)} </Avatar>
+                loadUser
+                ? <Skeleton variant="circle"/>
+                : (
+                    user.picture
+                    ? <Avatar src={user.picture}/>
+                    : <Avatar>{user.name.charAt(0)} </Avatar>
+                )
             }
             </div>
             <div className="w-10/12 m-auto">

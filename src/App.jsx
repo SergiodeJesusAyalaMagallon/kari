@@ -35,7 +35,7 @@ function App() {
       <Route exact path= '/'>
             <LoginPrin/>
         </Route>
-        <Route path= '/Home'>
+        <Route path= '/home'>
             <HomePage/>
         </Route>
         <Route path='/Search'>

@@ -6,23 +6,23 @@ import { setUserName } from '../../helpers/users';
 
 export const UseNameChange = ( name ) => {
     const [state, setState] = useState({
-        data: [],
+        data: null,
         loading: false,
         error: false
     });
 
     useEffect( () => {
-        console.log('iniciando')
+        //console.log('iniciando')
         if(name){
             setState({
-                data: [],
+                data: null,
                 loading: true, 
                 error: false
             });
             setUserName( name )
             .then(
                 (data) => {
-                    console.log(data)
+                    //console.log(data)
                     setState({
                         data,
                         loading: false,
@@ -31,7 +31,7 @@ export const UseNameChange = ( name ) => {
                 }
             ).catch(
                 (error) => {
-                    console.log(error)
+                    //console.log(error)
                     setState({
                         data: error,
                         loading: false,

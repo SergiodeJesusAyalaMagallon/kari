@@ -21,10 +21,7 @@ export const setUserName = (name) => {
       
         axios(config)
         .then( (response) => {
-          if(response.status !== 200 || response.statis !== 201)
-            reject(response.data);
-          else
-            resolve(response.data);
+          resolve(response.data);
         })
         .catch( (error) => {
           console.log(error);

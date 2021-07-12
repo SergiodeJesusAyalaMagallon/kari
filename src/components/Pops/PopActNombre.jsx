@@ -4,11 +4,12 @@ import FooterBasic from './FooterBasic'
 import HeaderBasic from './HeaderBasic'
 import ContActNombre from './ContActNombre';
 import { UseNameChange } from '../../hooks/users/useNameChange'
+import { UseUser } from '../../Context/UserContext'
 
 
-
-const PopActNombre = ({onClick}) => {
-    const [name, setName] = useState(`${window.localStorage.getItem('user')}`);
+const PopActNombre = ({onClick, user}) => {
+    const { setUser } = UseUser();
+    const [name, setName] = useState(user.name);
     const [send, setSend] = useState(null);
     const response = UseNameChange(send);
     const pattern = new RegExp('[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$', 'g');
@@ -28,8 +29,8 @@ const PopActNombre = ({onClick}) => {
         console.log(response);
         if(response.error){ 
             //Ocurrio error y hay que notificara al usuario
-        }else{
-            window.localStorage.setItem('user', response.data.name );
+        }else if(response.data){
+            setUser(response.data);
             onClick();
         }
         

@@ -6,8 +6,11 @@ import { Apple, AssignmentIndRounded } from '@material-ui/icons';
 import Modal from '@material-ui/core/Modal';
 import PopActFotPer from '../Pops/PopActFotPer'
 import Pop from '../Pops/PopActNombre'
+import { UseUser } from '../../Context/UserContext'
+import { Skeleton } from '@material-ui/lab';
 
 const ContCuenta = () => {
+    const {user, loadUser} = UseUser();
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
@@ -30,7 +33,7 @@ const ContCuenta = () => {
         setOpen2(false);
     };
     const body2 = (
-        <Pop onClick={handleClose2}/>
+        <Pop onClick={handleClose2} user={user}/>
     );
     return (
         <div>
@@ -42,11 +45,15 @@ const ContCuenta = () => {
             </Modal>
             <Line/>
             <button type="button" onClick={handleOpen2} className="w-full">
-            <CardITTF
-                Icono={AssignmentIndRounded}
-                Titulo="Nombre"
-                Texto={window.localStorage.getItem('user')}
-            />
+            {loadUser 
+                    ? <Skeleton variant="rect"/>
+                    :<CardITTF
+                            Icono={AssignmentIndRounded}
+                            Titulo="Nombre"
+                            Texto={user.name}
+                    />
+            }
+            
             </button>
             <Modal
                 open={open2}

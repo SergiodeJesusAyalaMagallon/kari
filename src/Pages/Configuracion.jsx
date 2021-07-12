@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BaseCard from '../components/Configuracion/BaseCard'
 import CarITF from '../components/Configuracion/CarITF'
 import ContApli from '../components/Configuracion/ContApli'
 import ContCuenta from '../components/Configuracion/ContCuenta'
 import ButtonV2 from '../components/DetServicio/Button'
-import {Link as RouterLink} from 'react-router-dom'
+import {Link as RouterLink, Redirect} from 'react-router-dom'
 import Link from '@material-ui/core/Link'
 import BottomNavBar from '../components/HomePage/BottomNavBar'
+import { UseUser } from '../Context/UserContext'
+
 const Configuracion = () => {
+    const { Logout  } = UseUser();
+    const [ redirect, setRedirect ] = useState(false);
     return (
         <div>
             <div className="h-screen overflow-scroll">
@@ -35,11 +39,18 @@ const Configuracion = () => {
                 <BaseCard Context={ContCuenta}/>
             </div>
             <div className="mt-10 pb-16">
-                <ButtonV2 Titulo="Cerrar la sesión"/>
+                <ButtonV2 Titulo="Cerrar la sesión" onClick={async()=>{
+                    await Logout();
+                    setRedirect(true);
+                }}/>
             </div>
             </div>
             <BottomNavBar variante4="NavSelected" ID="MT4"/>
+            {
+                redirect && <Redirect to='/' />
+            }
         </div>
+        
     )
 }
 

@@ -14,7 +14,7 @@ const LoginPrin = () => {
 
     const responseGoogle = (response) => {
         console.log(response);
-      }
+    }
 
       
     return (
@@ -40,7 +40,7 @@ const LoginPrin = () => {
                 />
             </div>
             </div>
-            {state && <Redirect to={'/Home'}/>}
+            {state && <Redirect to={'/home'}/>}
         </div>
         
     )

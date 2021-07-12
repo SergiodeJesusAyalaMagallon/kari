@@ -22,10 +22,10 @@ export const googleSignin = (id_token) => {
     
     axios(config)
     .then((response) => {
-      console.log("STATUS: ", response.status)
-      if(response.status === 300){
-        console.log('Error sin grupo')
-      }else
+      //console.log("STATUS: ", response.status)
+      // if(response.status === 300){
+      //   console.log('Error sin grupo')
+      // }else
         resolve(response.data)
     })
     .catch((error) => {

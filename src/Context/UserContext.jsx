@@ -16,14 +16,13 @@ export const UserProvider = (props) => {
         const loadUserInApp = async() =>{
             if(!getToken){
                 setLoadUser(false);
-                console.log("No hola")
                 return;
             }
             try {
                 const user = await getCurrentUser();
                 setUser( user );
+                console.log(user)
                 setLoadUser(false);
-                console.log("Hola")
             } catch (error) {
                 console.log(error.response);
             }
@@ -36,9 +35,10 @@ export const UserProvider = (props) => {
         googleSignin( tokenId )
         .then(
             (data) => {
+                console.log(data)
                 setUser(data.user);
                 setLoadUser(false);
-                setToken(data.xtoken);
+                setToken(data.token);
                 setRefreshToken(data.rtoken);
                 setActivation(data.ActivationCode);
             }
@@ -59,11 +59,14 @@ export const UserProvider = (props) => {
                 setUser(null);
             }
         });
+        signOut();
     }
+    
 
     const value = useMemo(() => {
         return ({
             user,
+            setUser,
             activation,
             loadUser,
             login,
